@@ -2,102 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Agastya Munnangi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agastya Munnangi – AI Founder & Researcher</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
   <!-- NAVIGATION -->
   <nav>
     <div class="nav-content">
-      <img src="assets/agastya.png" alt="Profile" class="nav-profile">
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+
+      <div class="nav-left">
+        <img src="assets/agastya.png" alt="Profile Photo" class="nav-profile">
+        <span class="nav-name">Agastya Munnangi</span>
       </div>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button id="themeToggle" class="toggle">☀️</button>
+      </div>
+
     </div>
   </nav>
 
-  <!-- HERO / INTRO -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Agastya Munnangi</h1>
-      <p class="hero-sub">AI Founder & Researcher — Turning ideas into real systems with real-world impact.</p>
-      <a href="#work" class="btn primary">Explore My Work</a>
-    </div>
+    <h1>Building AI that solves real problems in Healthcare.</h1>
+    <p class="hero-sub">
+      AI Founder • Researcher • Student
+    </p>
+    <a href="#work" class="btn primary">Explore My Work</a>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I am a 10th grade student at Lambert High School passionate about artificial intelligence,
-      biomedical research, and building systems that remove friction in everyday life.
-      From autonomous healthcare assistants to predictive ML models, I work on projects
-      that solve real problems.
+      I am a 10th grade student at Lambert High School with a deep interest in artificial
+      intelligence, biomedical research, and building systems that remove friction in
+      healthcare access. I focus on translating complex real-world problems into scalable,
+      AI-driven solutions.
     </p>
   </section>
 
-  <!-- WHAT I BUILD -->
-  <section id="work" class="section dark">
+  <!-- WORK -->
+  <section id="work" class="section alt">
     <h2>What I Build</h2>
 
-    <div class="feature-block">
-      <h3>AI Healthcare Agent — Iddu AI</h3>
+    <div class="card">
+      <h3>Iddu AI — Autonomous Healthcare Agent</h3>
       <p>
-        Iddu AI is an autonomous AI agent that interacts with real-world systems,
-        such as calling doctors’ offices and navigating scheduling systems — eliminating
-        barriers for patients in healthcare access. :contentReference[oaicite:1]{index=1}
+        Iddu AI is an autonomous system that calls doctors’ offices, navigates phone trees,
+        and schedules appointments on behalf of patients—reducing anxiety and eliminating
+        access barriers in healthcare.
       </p>
-      <a href="https://iddu.app/" target="_blank" class="btn secondary">Visit Iddu AI</a>
+      <a href="https://iddu.app/" target="_blank">Visit Iddu AI →</a>
     </div>
 
-    <div class="feature-block">
-      <h3>Prognosis & Survival Models — Imouva AI</h3>
+    <div class="card">
+      <h3>Imouva AI — Clinical ML Research</h3>
       <p>
-        Built machine learning models for cancer treatment outcome prediction,
-        supporting clinical research and early decision-making frameworks.
+        Developed survival and prognosis prediction models for cancer treatment response.
+        The platform is funded and being beta tested at institutions including Harvard
+        Medical School and Yale School of Medicine.
       </p>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
-    <h2>Highlighted Projects</h2>
+    <h2>Research & Projects</h2>
 
-    <div class="project-card">
-      <h3>CRISPR Ethics Framework</h3>
+    <div class="card">
+      <h3>A Framework for Auditing the Consequences of CRISPR</h3>
       <p>
-        Led a research team at the Youth Tech & Ethics Institute to develop a structured
-        methodology for auditing the societal impacts of CRISPR technology.
+        Led a research team at the Youth Tech & Ethics Institute to design a framework for
+        evaluating the ethical and societal implications of CRISPR technology.
       </p>
       <a href="https://www.youthtechandethics.org/A%20Framework%20for%20Auditing%20the%20Consequences%20of%20CRISPR.pdf" target="_blank">
-        View Paper
+        View Paper →
       </a>
     </div>
 
-    <div class="project-card">
-      <h3>Cancer Coagulation Biomarkers</h3>
+    <div class="card">
+      <h3>Microparticles as Biomarkers in Cancer</h3>
       <p>
-        Research presentation at IJSCAR exploring microparticles as biomarkers for blood coagulation
-        in cancer, comparing predictive efficacy with conventional markers.
+        Selected to present at the IJSCAR symposium for research analyzing microparticles
+        as biomarkers for blood coagulation in cancer.
       </p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Get In Touch</h2>
-    <p>Interested in collaborating or mentoring? I’m always open to connect.</p>
+  <section id="contact" class="section alt">
+    <h2>Contact</h2>
+    <p>
+      Interested in research collaboration, mentorship, or impactful projects?
+    </p>
     <a href="mailto:agastyamunnangi@gmail.com" class="btn primary">Email Me</a>
   </section>
 
   <footer>
     © 2026 Agastya Munnangi
   </footer>
+
+  <!-- THEME TOGGLE SCRIPT -->
+  <script>
+    const toggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light");
+      body.classList.toggle("dark");
+      toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
 
 </body>
 </html>
