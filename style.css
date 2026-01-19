@@ -1,90 +1,124 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #f5f7fa;
-  color: #111;
+  background: #ffffff;
+  color: #0d0d0d;
   line-height: 1.6;
 }
 
-/* HEADER */
-.header {
-  background: #ffffff;
-  text-align: center;
-  padding: 3rem 1.5rem;
+/* NAVIGATION */
+nav {
+  display: flex;
+  background: #f8f8f8;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
+  align-items: center;
 }
 
-.profile-img {
-  width: 140px;
-  height: 140px;
+.nav-profile {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
-.subtitle {
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.links a {
-  margin: 0 0.7rem;
-  color: #0066cc;
+.nav-links a {
+  margin-left: 1.4rem;
   text-decoration: none;
+  color: #333;
   font-weight: 500;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2.5rem 1.5rem;
+.nav-links a:hover {
+  color: #000;
 }
 
-section {
-  margin-bottom: 3rem;
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-h2 {
-  font-size: 1.4rem;
-  border-bottom: 2px solid #000;
-  margin-bottom: 1rem;
-  padding-bottom: 0.3rem;
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
 }
 
-.item {
+.hero-sub {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.meta {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 0.4rem;
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
-ul {
-  margin-left: 1.2rem;
+.primary {
+  background: #fff;
+  color: #1a73e8;
 }
 
-li {
-  margin-bottom: 0.4rem;
+.secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
-/* TWO COLUMN LIST */
-.two-col {
-  columns: 2;
-  column-gap: 2rem;
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 1.5rem;
 }
 
-/* FOOTER */
+.dark {
+  background: #f7f9fc;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #1a73e8;
+  display: inline-block;
+}
+
+/* FEATURES */
+.feature-block {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 1.6rem;
+}
+
+.project-card a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
-  padding: 1.5rem;
-  color: #777;
+  padding: 2rem;
+  color: #888;
   font-size: 0.9rem;
 }
