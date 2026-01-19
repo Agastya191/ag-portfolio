@@ -1,144 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agastya Munnangi</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agastya Munnangi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-container">
-      <span class="logo">Agastya</span>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">AM</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="assets/agastya.png" alt="Agastya Munnangi" class="hero-img" />
-    <h1>Building AI that solves real problems.</h1>
-    <p class="hero-sub">
-      10th Grade Student • AI Founder • Researcher • SAT 1530
-    </p>
-    <div class="hero-buttons">
-      <a href="#work" class="btn primary">View Work</a>
-      <a href="#contact" class="btn secondary">Get in Touch</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="assets/agastya.png" alt="Agastya Munnangi" class="profile-img">
+            </div>
+            <h1>Agastya <span class="gradient-text">Munnangi</span></h1>
+            <p class="subtitle">AI Developer & Researcher | Student at Lambert High School</p>
+            <div class="stats-bar">
+                <div class="stat"><span>4.0</span> GPA</div>
+                <div class="stat"><span>1530</span> SAT</div>
+            </div>
+            <div class="social-links">
+                <a href="mailto:agastyamunnangi@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/agastya-munnangi-7ba10a229" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://iddu.app/" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p class="section-text">
-      I’m a 10th grade student at Lambert High School with a strong interest in
-      artificial intelligence, biomedical research, and entrepreneurship.
-      I build real-world systems that remove friction—whether in healthcare,
-      education, or community impact.
-    </p>
+    <main class="container">
+        
+        <!-- About / Education -->
+        <section id="about" class="glass-card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="edu-item">
+                <h3>Lambert High School</h3>
+                <p class="date">Expected Graduation: May 2028</p>
+                <p><strong>Relevant Coursework:</strong> AP Bio, AP World History, AP Precalc, AP Psychology, AP Human Geography, Honors Chem, Honors Lit.</p>
+            </div>
+        </section>
 
-    <div class="stats">
-      <div class="stat">
-        <h3>4.0</h3>
-        <p>Unweighted GPA</p>
-      </div>
-      <div class="stat">
-        <h3>1530</h3>
-        <p>SAT Score</p>
-      </div>
-      <div class="stat">
-        <h3>110+</h3>
-        <p>Volunteer Hours</p>
-      </div>
-    </div>
-  </section>
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="grid">
+                <!-- Iddu AI -->
+                <div class="glass-card accent-card">
+                    <span class="tag">Founder</span>
+                    <h3>Iddu AI</h3>
+                    <p class="date">May 2025 - Present</p>
+                    <p>Developed an AI health app that autonomously navigates phone trees to schedule medical appointments. Reducing patient anxiety and logistical barriers.</p>
+                    <a href="https://iddu.app/" class="btn-sm">View Site</a>
+                </div>
 
-  <!-- WORK -->
-  <section id="work" class="section dark">
-    <h2>Experience & Leadership</h2>
+                <!-- Imouva AI -->
+                <div class="glass-card">
+                    <span class="tag">Researcher</span>
+                    <h3>Imouva AI</h3>
+                    <p>Modeling survival/prognosis AI for cancer treatments. Tested at <strong>Harvard Medical School</strong> and <strong>Yale School of Medicine</strong>. $10k+ in funding.</p>
+                </div>
 
-    <div class="card">
-      <h3>Founder & Developer — Iddu AI</h3>
-      <span>2025 – Present</span>
-      <p>
-        Built an AI healthcare assistant that autonomously calls doctors’ offices,
-        navigates phone trees, and schedules appointments to reduce patient anxiety.
-        Currently in beta, with a public release planned for April 2026.
-      </p>
-      <a href="https://iddu.app/" target="_blank">Visit Iddu →</a>
-    </div>
+                <!-- Meals by Grace -->
+                <div class="glass-card">
+                    <span class="tag">Co-Founder</span>
+                    <h3>Meals By Grace Club</h3>
+                    <p>Raised $3,000+ and led 150+ members to provide student volunteering opportunities and community support.</p>
+                </div>
 
-    <div class="card">
-      <h3>Researcher / ML Coder — Imouva AI</h3>
-      <span>2025 – Present</span>
-      <p>
-        Developed survival and prognosis models for cancer treatment prediction.
-        Platform has received $10,000+ in funding and is being tested at Harvard,
-        Yale, and Massachusetts General Hospital.
-      </p>
-    </div>
+                <!-- Tutoring -->
+                <div class="glass-card">
+                    <span class="tag">Education</span>
+                    <h3>Teaching & Coaching</h3>
+                    <p><strong>Khan Academy:</strong> 26+ hours of global SAT coaching. <br> <strong>LearnToBe:</strong> 110+ hours tutoring underserved youth.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="card">
-      <h3>Co-Founder — Meals By Grace Club</h3>
-      <span>2024 – Present</span>
-      <p>
-        Co-founded a service club with 150+ members, raising $3,000+ to support
-        underserved families and strengthen community engagement.
-      </p>
-    </div>
-  </section>
+        <!-- Skills -->
+        <section id="skills" class="glass-card">
+            <h2>Skills & Awards</h2>
+            <div class="skills-container">
+                <span class="skill-badge">Python Certified</span>
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">Entrepreneurship</span>
+                <span class="skill-badge">Public Health (HOSA State Top 5)</span>
+                <span class="skill-badge">DECA International Qualifier</span>
+            </div>
+        </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Research & Projects</h2>
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="grid">
+                <div class="glass-card project-card">
+                    <h3>Youth Tech & Ethics Institute</h3>
+                    <p>Leading research on auditing the consequences of CRISPR gene editing.</p>
+                    <a href="#" class="project-link">Read Research <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="glass-card project-card">
+                    <h3>Biomarkers in Cancer</h3>
+                    <p>Comparative analysis of microparticles for blood coagulation in cancer patients. Presented at IJSCAR.</p>
+                    <a href="#" class="project-link">Read Research <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
 
-    <div class="grid">
-      <div class="project-card">
-        <h3>CRISPR Ethics Framework</h3>
-        <p>
-          Led a 3-member research team at the Youth Tech & Ethics Institute to
-          develop a framework for auditing the societal consequences of CRISPR.
-        </p>
-        <a href="https://www.youthtechandethics.org/A%20Framework%20for%20Auditing%20the%20Consequences%20of%20CRISPR.pdf" target="_blank">
-          Read Paper →
-        </a>
-      </div>
+    </main>
 
-      <div class="project-card">
-        <h3>Microparticles in Cancer Coagulation</h3>
-        <p>
-          Selected to present research at the IJSCAR symposium on microparticles
-          as biomarkers for blood coagulation in cancer.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Contact</h2>
-    <p class="section-text">
-      Interested in research, collaboration, or mentorship?
-    </p>
-
-    <div class="contact-links">
-      <a href="mailto:agastyamunnangi@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/agastya-munnangi-7ba10a229" target="_blank">LinkedIn</a>
-      <a href="https://iddu.app/" target="_blank">Startup</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Agastya Munnangi
-  </footer>
+    <footer>
+        <p>&copy; 2025 Agastya Munnangi. Built with code.</p>
+    </footer>
 
 </body>
 </html>
