@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav>
     <div class="nav-inner">
       <div class="nav-left">
@@ -26,16 +26,10 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text fade-in">
-      <h1>Building AI that solves real problems in Healthcare</h1>
-      <p>10th Grade Student • Researcher • Innovator • Community Builder</p>
-    </div>
-    <div class="hero-bg">
-      <!-- abstract background shapes -->
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Student, researcher, and AI innovator at the intersection of healthcare and tech</h1>
+      <p>10th Grade • Lambert High School • Community Impact</p>
     </div>
   </section>
 
@@ -62,13 +56,12 @@
       <div class="tile">
         <div class="icon">🤖</div>
         <h3>Iddu AI</h3>
-        <p>Autonomous AI agent calling doctors’ offices, navigating phone trees, and scheduling appointments.</p>
-        <a href="https://iddu.app/" target="_blank">Learn More</a>
+        <p>AI agent scheduling appointments and navigating healthcare systems.</p>
       </div>
       <div class="tile">
         <div class="icon">🧬</div>
         <h3>Imouva AI</h3>
-        <p>Machine learning models predicting cancer treatment outcomes. Tested at Harvard, Yale, MGH.</p>
+        <p>ML models predicting patient outcomes for cancer treatments.</p>
       </div>
     </div>
   </section>
@@ -80,17 +73,17 @@
       <div class="tile">
         <div class="icon">🍽️</div>
         <h3>Meals By Grace Club</h3>
-        <p>Co-Founder, 150+ members, raised $3,000+ supporting local families.</p>
+        <p>Co-founder, 150+ members, $3,000+ raised.</p>
       </div>
       <div class="tile">
         <div class="icon">📚</div>
         <h3>SAT Coaching</h3>
-        <p>26+ one-hour sessions teaching students worldwide.</p>
+        <p>26+ one-hour sessions worldwide.</p>
       </div>
       <div class="tile">
         <div class="icon">🎓</div>
         <h3>LearnToBe Tutoring</h3>
-        <p>110+ hours coaching elementary students from underserved communities.</p>
+        <p>110+ hours supporting underserved students.</p>
       </div>
     </div>
   </section>
@@ -102,12 +95,12 @@
       <div class="tile">
         <div class="icon">🧪</div>
         <h3>CRISPR Ethics Framework</h3>
-        <p>Developed framework auditing societal consequences of CRISPR. <a href="https://www.youthtechandethics.org/A%20Framework%20for%20Auditing%20the%20Consequences%20of%20CRISPR.pdf" target="_blank">View Paper</a></p>
+        <p>Auditing societal impacts of CRISPR technology. <a href="https://www.youthtechandethics.org/A%20Framework%20for%20Auditing%20the%20Consequences%20of%20CRISPR.pdf" target="_blank">View Paper</a></p>
       </div>
       <div class="tile">
         <div class="icon">🔬</div>
         <h3>Microparticles in Cancer</h3>
-        <p>Presented at IJSCAR Symposium on microparticles as biomarkers for blood coagulation.</p>
+        <p>Presented at IJSCAR Symposium on blood coagulation biomarkers.</p>
       </div>
     </div>
   </section>
@@ -126,7 +119,7 @@
     © 2026 Agastya Munnangi
   </footer>
 
-  <!-- Scroll animation -->
+  <!-- Fade-in on scroll -->
   <script>
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -137,5 +130,6 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
+
 </body>
 </html>
