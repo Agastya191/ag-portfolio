@@ -1,131 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agastya Munnangi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Agastya Munnangi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">AM</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <img src="assets/agastya.png" alt="Profile Photo">
+        <span>Agastya Munnangi</span>
+      </div>
+      <div class="nav-right">
+        <a href="#stats">Stats</a>
+        <a href="#projects">Projects</a>
+        <a href="#extracurriculars">Extracurriculars</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="profile-img-container">
-                <img src="assets/agastya.png" alt="Agastya Munnangi" class="profile-img">
-            </div>
-            <h1>Agastya <span class="gradient-text">Munnangi</span></h1>
-            <p class="subtitle">AI Developer & Researcher | Student at Lambert High School</p>
-            <div class="stats-bar">
-                <div class="stat"><span>4.0</span> GPA</div>
-                <div class="stat"><span>1530</span> SAT</div>
-            </div>
-            <div class="social-links">
-                <a href="mailto:agastyamunnangi@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/agastya-munnangi-7ba10a229" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://iddu.app/" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text fade-in">
+      <h1>Building AI that solves real problems in Healthcare</h1>
+      <p>10th Grade Student • Researcher • Innovator • Community Builder</p>
+    </div>
+    <div class="hero-bg">
+      <!-- abstract background shapes -->
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+  </section>
 
-    <main class="container">
-        
-        <!-- About / Education -->
-        <section id="about" class="glass-card">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="edu-item">
-                <h3>Lambert High School</h3>
-                <p class="date">Expected Graduation: May 2028</p>
-                <p><strong>Relevant Coursework:</strong> AP Bio, AP World History, AP Precalc, AP Psychology, AP Human Geography, Honors Chem, Honors Lit.</p>
-            </div>
-        </section>
+  <!-- STATS -->
+  <section id="stats" class="stats fade-in">
+    <div class="stat">
+      <h2>4.0</h2>
+      <span>GPA</span>
+    </div>
+    <div class="stat">
+      <h2>1530</h2>
+      <span>SAT</span>
+    </div>
+    <div class="stat">
+      <h2>150+</h2>
+      <span>Volunteer Hours</span>
+    </div>
+  </section>
 
-        <!-- Experience -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            
-            <div class="grid">
-                <!-- Iddu AI -->
-                <div class="glass-card accent-card">
-                    <span class="tag">Founder</span>
-                    <h3>Iddu AI</h3>
-                    <p class="date">May 2025 - Present</p>
-                    <p>Developed an AI health app that autonomously navigates phone trees to schedule medical appointments. Reducing patient anxiety and logistical barriers.</p>
-                    <a href="https://iddu.app/" class="btn-sm">View Site</a>
-                </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="tiles">
+      <div class="tile">
+        <div class="icon">🤖</div>
+        <h3>Iddu AI</h3>
+        <p>Autonomous AI agent calling doctors’ offices, navigating phone trees, and scheduling appointments.</p>
+        <a href="https://iddu.app/" target="_blank">Learn More</a>
+      </div>
+      <div class="tile">
+        <div class="icon">🧬</div>
+        <h3>Imouva AI</h3>
+        <p>Machine learning models predicting cancer treatment outcomes. Tested at Harvard, Yale, MGH.</p>
+      </div>
+    </div>
+  </section>
 
-                <!-- Imouva AI -->
-                <div class="glass-card">
-                    <span class="tag">Researcher</span>
-                    <h3>Imouva AI</h3>
-                    <p>Modeling survival/prognosis AI for cancer treatments. Tested at <strong>Harvard Medical School</strong> and <strong>Yale School of Medicine</strong>. $10k+ in funding.</p>
-                </div>
+  <!-- EXTRACURRICULARS -->
+  <section id="extracurriculars" class="section fade-in">
+    <h2>Extracurriculars</h2>
+    <div class="tiles">
+      <div class="tile">
+        <div class="icon">🍽️</div>
+        <h3>Meals By Grace Club</h3>
+        <p>Co-Founder, 150+ members, raised $3,000+ supporting local families.</p>
+      </div>
+      <div class="tile">
+        <div class="icon">📚</div>
+        <h3>SAT Coaching</h3>
+        <p>26+ one-hour sessions teaching students worldwide.</p>
+      </div>
+      <div class="tile">
+        <div class="icon">🎓</div>
+        <h3>LearnToBe Tutoring</h3>
+        <p>110+ hours coaching elementary students from underserved communities.</p>
+      </div>
+    </div>
+  </section>
 
-                <!-- Meals by Grace -->
-                <div class="glass-card">
-                    <span class="tag">Co-Founder</span>
-                    <h3>Meals By Grace Club</h3>
-                    <p>Raised $3,000+ and led 150+ members to provide student volunteering opportunities and community support.</p>
-                </div>
+  <!-- RESEARCH -->
+  <section id="research" class="section fade-in">
+    <h2>Research</h2>
+    <div class="tiles">
+      <div class="tile">
+        <div class="icon">🧪</div>
+        <h3>CRISPR Ethics Framework</h3>
+        <p>Developed framework auditing societal consequences of CRISPR. <a href="https://www.youthtechandethics.org/A%20Framework%20for%20Auditing%20the%20Consequences%20of%20CRISPR.pdf" target="_blank">View Paper</a></p>
+      </div>
+      <div class="tile">
+        <div class="icon">🔬</div>
+        <h3>Microparticles in Cancer</h3>
+        <p>Presented at IJSCAR Symposium on microparticles as biomarkers for blood coagulation.</p>
+      </div>
+    </div>
+  </section>
 
-                <!-- Tutoring -->
-                <div class="glass-card">
-                    <span class="tag">Education</span>
-                    <h3>Teaching & Coaching</h3>
-                    <p><strong>Khan Academy:</strong> 26+ hours of global SAT coaching. <br> <strong>LearnToBe:</strong> 110+ hours tutoring underserved youth.</p>
-                </div>
-            </div>
-        </section>
+  <!-- CONTACT -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:agastyamunnangi@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/agastya-munnangi-7ba10a229" target="_blank">LinkedIn</a> ·
+      <a href="https://iddu.app/" target="_blank">Iddu AI</a>
+    </p>
+  </section>
 
-        <!-- Skills -->
-        <section id="skills" class="glass-card">
-            <h2>Skills & Awards</h2>
-            <div class="skills-container">
-                <span class="skill-badge">Python Certified</span>
-                <span class="skill-badge">Machine Learning</span>
-                <span class="skill-badge">Entrepreneurship</span>
-                <span class="skill-badge">Public Health (HOSA State Top 5)</span>
-                <span class="skill-badge">DECA International Qualifier</span>
-            </div>
-        </section>
+  <footer>
+    © 2026 Agastya Munnangi
+  </footer>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="grid">
-                <div class="glass-card project-card">
-                    <h3>Youth Tech & Ethics Institute</h3>
-                    <p>Leading research on auditing the consequences of CRISPR gene editing.</p>
-                    <a href="#" class="project-link">Read Research <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="glass-card project-card">
-                    <h3>Biomarkers in Cancer</h3>
-                    <p>Comparative analysis of microparticles for blood coagulation in cancer patients. Presented at IJSCAR.</p>
-                    <a href="#" class="project-link">Read Research <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Agastya Munnangi. Built with code.</p>
-    </footer>
-
+  <!-- Scroll animation -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
