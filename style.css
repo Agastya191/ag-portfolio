@@ -1,12 +1,8 @@
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -15,43 +11,24 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+/* NAVIGATION */
 nav {
-  position: sticky;
-  top: 0;
-  background: #f8f9fb;
+  display: flex;
+  background: #f8f8f8;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
-  z-index: 100;
-}
-
-.nav-content {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0.8rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left {
-  display: flex;
   align-items: center;
 }
 
 .nav-profile {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  margin-right: 0.6rem;
-}
-
-.nav-name {
-  font-weight: 600;
-  font-size: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-links a {
-  margin-left: 1.5rem;
+  margin-left: 1.4rem;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -63,21 +40,20 @@ nav {
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 6rem 1.5rem;
   background: linear-gradient(135deg, #1a73e8, #4285f4);
   color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 2.6rem;
-  max-width: 900px;
-  margin: auto;
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
 }
 
 .hero-sub {
-  font-size: 1.1rem;
-  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -86,16 +62,18 @@ nav {
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
+  margin-top: 1rem;
 }
 
 .primary {
-  background: #ffffff;
+  background: #fff;
   color: #1a73e8;
 }
 
 .secondary {
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 /* SECTIONS */
@@ -106,46 +84,41 @@ nav {
 }
 
 .dark {
-  background: #f5f7fb;
+  background: #f7f9fc;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   border-bottom: 3px solid #1a73e8;
   display: inline-block;
 }
 
-/* FEATURE BLOCKS */
+/* FEATURES */
 .feature-block {
-  background: #ffffff;
-  padding: 1.6rem;
-  border-radius: 14px;
-  border: 1px solid #e2e2e2;
-  margin-top: 1.8rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
 }
 
-/* PROJECT CARDS */
 .project-card {
   background: #ffffff;
   padding: 1.6rem;
-  border-radius: 14px;
   border: 1px solid #ddd;
-  margin-top: 1.8rem;
+  border-radius: 10px;
+  margin-top: 1.6rem;
 }
 
 .project-card a {
-  display: inline-block;
-  margin-top: 0.6rem;
   color: #1a73e8;
   text-decoration: none;
-  font-weight: 500;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
-  color: #777;
+  color: #888;
   font-size: 0.9rem;
 }
