@@ -1,52 +1,110 @@
 :root {
-    --primary: #2563eb;
-    --dark: #1e293b;
-    --light: #f8fafc;
-    --text: #334155;
+    --bg: #0a0a0c;
+    --card-bg: #16161a;
+    --accent: #3b82f6;
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    line-height: 1.6;
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
     margin: 0;
-    background-color: var(--light);
-    color: var(--text);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+.grid-container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
 }
 
-header {
-    background: var(--dark);
-    color: white;
+/* PROFILE SECTION */
+.profile-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #334155;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid var(--accent);
+}
+
+.stats-grid {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat-item {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 20px;
+    border-radius: 12px;
     text-align: center;
-    padding: 4rem 0;
 }
 
-header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+.stat-item span { display: block; font-size: 0.7rem; color: var(--text-dim); }
 
-.subtitle { color: #94a3b8; font-size: 1.2rem; }
-
-.contact-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: 500;
+/* VENTURE BOX */
+.hero-venture {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #27272a;
 }
 
-h2 { border-bottom: 2px solid var(--primary); display: inline-block; margin-bottom: 1.5rem; }
+.badge {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: fit-content;
+}
 
+/* GENERAL CARDS */
 .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-    margin-bottom: 1.5rem;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #27272a;
 }
 
-.date { font-size: 0.85rem; color: var(--primary); font-weight: bold; }
+.item h4 { margin: 10px 0 5px 0; color: var(--accent); }
+.item p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 15px; }
 
-footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #64748b; }
+.pills span {
+    display: inline-block;
+    background: #27272a;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .grid-container { grid-template-columns: 1fr; }
+}
