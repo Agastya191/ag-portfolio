@@ -1,110 +1,104 @@
 :root {
-    --bg: #0a0a0c;
-    --card-bg: #16161a;
-    --accent: #3b82f6;
-    --text-main: #ffffff;
-    --text-dim: #94a3b8;
+    --bg-color: #050505;
+    --card-bg: #111113;
+    --accent-glow: #3b82f6;
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --border-color: #27272a;
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text-main);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin: 0;
-    padding: 40px 20px;
+    padding: 2rem;
     display: flex;
     justify-content: center;
 }
 
-.grid-container {
+.grid-wrapper {
     max-width: 1100px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(180px, auto);
     gap: 20px;
 }
 
-/* PROFILE SECTION */
-.profile-card {
-    background: linear-gradient(145deg, #1e293b, #0f172a);
-    padding: 40px;
+/* Bento Box Styling */
+.bento-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 24px;
-    border: 1px solid #334155;
+    padding: 30px;
+    transition: transform 0.3s ease, border 0.3s ease;
 }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
+.bento-card:hover {
+    border-color: var(--accent-glow);
+    transform: translateY(-5px);
+}
+
+/* Profile Section Layout */
+.profile-main {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero-img {
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 2px solid var(--accent);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
 }
 
-.stats-grid {
+.identity h1 { font-size: 2.5rem; margin: 0; font-weight: 800; }
+.school { color: var(--text-secondary); margin: 5px 0 20px 0; }
+
+.academic-badges {
     display: flex;
     gap: 15px;
-    margin: 20px 0;
-}
-
-.stat-item {
-    background: rgba(255,255,255,0.05);
-    padding: 10px 20px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.stat-item span { display: block; font-size: 0.7rem; color: var(--text-dim); }
-
-/* VENTURE BOX */
-.hero-venture {
-    background: var(--card-bg);
-    padding: 40px;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid #27272a;
 }
 
 .badge {
-    background: rgba(59, 130, 246, 0.1);
-    color: var(--accent);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    width: fit-content;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
 }
 
-/* GENERAL CARDS */
-.card {
-    background: var(--card-bg);
-    padding: 30px;
-    border-radius: 24px;
-    border: 1px solid #27272a;
-}
+/* Sections */
+.venture-highlight { grid-column: span 2; background: linear-gradient(145deg, #111113, #1e293b); }
+.status-tag { color: var(--accent-glow); font-size: 0.7rem; font-weight: bold; letter-spacing: 1px; margin-bottom: 10px; }
+.site-link { color: var(--accent-glow); text-decoration: none; font-weight: 600; margin-top: 15px; display: block; }
 
-.item h4 { margin: 10px 0 5px 0; color: var(--accent); }
-.item p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 15px; }
+.research-box { grid-column: span 1; grid-row: span 2; }
+.impact-box { grid-column: span 2; }
 
-.pills span {
+.skill-tags span {
     display: inline-block;
-    background: #27272a;
-    padding: 6px 14px;
+    background: #18181b;
+    padding: 8px 14px;
     border-radius: 10px;
-    font-size: 0.8rem;
     margin: 5px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
 }
 
-.btn {
-    margin-top: 20px;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* RESPONSIVE */
-@media (max-width: 850px) {
-    .grid-container { grid-template-columns: 1fr; }
+/* Responsive Styling */
+@media (max-width: 900px) {
+    .grid-wrapper { grid-template-columns: 1fr; }
+    .profile-main, .venture-highlight, .impact-box { grid-column: span 1; }
+    .profile-header { flex-direction: column; text-align: center; }
 }
